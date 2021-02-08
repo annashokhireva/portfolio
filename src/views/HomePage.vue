@@ -1,33 +1,31 @@
 <template>
-	<div class="home">
-	
-		<HelloWorld msg="Hello, My name is Anna" />
+	<main>
+		<about-me msg="Hello, My name is Anna" />
 
-		<skills-footer />
+		<my-skills/>
 
-	</div>
+	</main>
 </template>
 
 <script>
-	import HelloWorld from "@/components/HelloWorld.vue";
-	import SkillsFooter from '../components/SkillsFooter.vue';
+	import MySkills from '../components/MySkills.vue';
+	import AboutMe from '../components/AboutMe.vue';
 
 	export default {
 		name: "HomePage",
 		components: {
-			HelloWorld,
-			SkillsFooter
+			MySkills,
+			AboutMe
 		}
 	};
 </script>
 
 <style lang="scss" scoped>
 
-	.home {
+	main {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 80%;
 	}
 
 </style>

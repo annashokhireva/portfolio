@@ -1,12 +1,20 @@
 <template>
 	<div id="app">
-		<div id="nav">
-		<router-link to="/">Home</router-link> |
-		<router-link to="/my_projects">My Projects</router-link>
-		</div>
+		<main-header />
 		<router-view />
 	</div>
 </template>
+
+<script>
+	import MainHeader from './components/MainHeader'
+
+	export default {
+		components: {
+			MainHeader
+		}
+
+	}
+</script>
 
 <style lang="scss">
 	@import './sass';
@@ -22,17 +30,4 @@
 		background-repeat: no-repeat;
 		padding-right: 30%;
 	}
-
-	#nav {
-		padding: 30px;
-
-	a {
-		font-weight: bold;
-		color: #2c3e50;
-
-		&.router-link-exact-active {
-		color: $green;
-		}
-	}
-}
 </style>
