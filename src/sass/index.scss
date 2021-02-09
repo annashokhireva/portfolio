@@ -1,3 +1,4 @@
-@import './variables/variables';
-@import './general/app';
-@import './elements/sectionView';
+@import './essentials/variables.scss';
+@import './general/app.scss';
+@import './elements/sectionView.scss';
+@import './mixins/iconCircle.scss';
