@@ -2,15 +2,19 @@
 	<div id="app">
 		<main-header />
 		<router-view />
+		<credits-footer />
 	</div>
 </template>
 
 <script>
-	import MainHeader from './components/MainHeader'
+	import MainHeader from './components/MainHeader';
+	import CreditsFooter from './components/CreditsFooter.vue';
+
 
 	export default {
 		components: {
-			MainHeader
+			MainHeader,
+			CreditsFooter
 		}
 
 	}
@@ -24,10 +28,29 @@
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
 		color: #2c3e50;
-		background-image: url('./assets/img/Cactus.png');
-		background-size: cover;
-		background-position-x: right;
-		background-repeat: no-repeat;
-		padding-right: 30%;
+		// background: rgb(250, 249, 249);
+		// background-image: url('./assets/img/BackgroundWhite.jpg');
+		// background-size: cover;
+		// background-position-x: left;
+		// background-repeat: no-repeat;
+		height: fit-content;
 	}
+
+	// @media only screen and (max-width: 1290px) {
+ 	// 	#app {
+    // 		background-image: url('./assets/img/Mac.png');
+	// 		background-size: cover;
+	// 		background-position-x: center;
+	// 		background-repeat: no-repeat;
+  	// 	}
+	// }
+
+	// @media only screen and (max-width: 900px) {
+ 	// 	#app {
+    // 		background-image: url('./assets/img/iPhone.png');
+	// 		background-size: cover;
+	// 		background-position-x: 70%;			
+	// 		background-repeat: no-repeat;
+  	// 	}
+	// }
 </style>

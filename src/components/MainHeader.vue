@@ -13,15 +13,18 @@ export default {
 
 <style scoped lang="scss">
 	header {
-		padding: 30px;
-		position: sticky;
+		padding: 3vmin 2vmin;	
+		position: fixed;
+		width: 100vw;
+		background-color: honeydew;
+		opacity: 90%;
 
 		a {
 			font-weight: bold;
 			color: #2c3e50;
 
 			&.router-link-exact-active {
-			color: $green;
+			color: green;
 			}
 		}
 	}

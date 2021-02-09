@@ -1,5 +1,5 @@
 <template>
-	<section >
+	<section class="main-section">
 		<h1>{{ msg }}</h1>
 	</section>
 </template>
@@ -15,7 +15,10 @@
 <style scoped lang="scss">
 
 	section {
-		height: 100vh;
+		// background-image: url('../assets/img/FlowerDesk.jpg');
+		// background-size: cover;
+		// background-position-x: left;
+		// background-repeat: no-repeat;
 	}
 
 </style>
