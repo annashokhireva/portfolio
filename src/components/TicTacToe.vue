@@ -1,23 +1,59 @@
 <template>
 	<div>
-		<div class="play-field">
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
+		<div class="play-field" >
+			<div v-for="(square, index) in board" :key="index" v-bind="board.square" >
+				<span @click="setMark(square, index)"> {{square}} </span>
+			</div>
 		</div>
-		<div class="status-display"></div>
+		<div class="status-display"> {{statusDisplay}} </div>
 	</div>
 </template>
 
 <script>
 export default {
+	data() {
+		{
+			return {
+				winningCombos: [
+					[0, 1, 2],
+					[3, 4, 5],
+					[6, 7, 8],
+					[0, 3, 6],
+					[1, 4, 7],
+					[2, 5, 8],
+					[0, 4, 8],
+					[2, 4, 6]
+				],
 
+				board: [
+					'', '', 'O',
+					'', 'X', '',
+					'', '', ''
+				],
+
+				statusDisplay: '',
+
+				currentPlayer: {
+					playerX: true,
+					playerO: false
+				}
+			}
+		}
+	},
+
+	methods: {
+		setMark(x, y) {
+			if (this.board[x, y] !== '') {
+			// Invalid move.
+			return;
+			}
+			this.board[x, y] = 'X';
+			// TODO implement some AI super-overlord algorithm that will calculate
+			//  the computers move.
+
+			this.$forceUpdate();
+		}
+	}
 }
 </script>
 
@@ -37,8 +73,11 @@ export default {
 		flex-wrap: wrap;
 		justify-content: center;
 
-		.square {
+		:nth-child(n) {
 			margin: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		:nth-child(1),
