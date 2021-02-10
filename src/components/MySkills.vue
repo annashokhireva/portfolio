@@ -1,10 +1,10 @@
 <template>
     <section class="main-section">
 		<ul class="circle-container">
-			<li><vue-icon class="img"/></li>
-			<li><j-s-icon class="img" /></li>
-			<li><sass-icon class="img" /></li>
-			<li><responsive-design class="img" /></li>
+			<li><vue-icon-color class="img"/></li>
+			<li><j-s-icon-color class="img" /></li>
+			<li><sass-icon-color class="img" /></li>
+			<li><responsive-design-color class="img" /></li>
 			<li><css-icon class="img" /></li>
 			<li><html-icon class="img" /></li>
 		</ul>
@@ -13,21 +13,21 @@
 </template>
 
 <script>
-	import VueIcon from '../assets/icons/VueIcon.vue';
-	import JSIcon from '../assets/icons/JSIcon.vue';
-	import SassIcon from '../assets/icons/SassIcon.vue';
-	import ResponsiveDesign from '../assets/icons/ResponsiveDesign.vue';
+	import JSIconColor from '../assets/icons/JSIconColor.vue';
+	import SassIconColor from '../assets/icons/SassIconColor.vue';
 	import CssIcon from '../assets/icons/CssIcon.vue';
 	import HtmlIcon from '../assets/icons/HtmlIcon.vue';
+	import VueIconColor from '../assets/icons/VueIconColor.vue';
+	import ResponsiveDesignColor from '../assets/icons/ResponsiveDesignColor.vue';
 
 	export default {
 		components: { 
-			VueIcon,
-			JSIcon,
-			SassIcon,
-			ResponsiveDesign,
+			JSIconColor,
+			SassIconColor,
 			CssIcon,
-			HtmlIcon 
+			HtmlIcon,
+			VueIconColor,
+			ResponsiveDesignColor
 		},
 	}
 </script>
@@ -36,7 +36,7 @@
 
 	section {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-start;
 		align-items: center;
 	}
 
@@ -102,8 +102,9 @@
 			&:active {
 				width: 100%; 
 				height: 100%;
+				filter: none;
+			}
+		}
 	}
-  }
-}
 
 </style>

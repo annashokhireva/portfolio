@@ -21,6 +21,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+	svg {
+		fill: rgb(53, 134, 187);
+	}
 </style>

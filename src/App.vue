@@ -28,11 +28,11 @@
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
 		color: #2c3e50;
-		// background: rgb(250, 249, 249);
-		// background-image: url('./assets/img/BackgroundWhite.jpg');
-		// background-size: cover;
-		// background-position-x: left;
-		// background-repeat: no-repeat;
+		background: rgb(250, 249, 249);
+		background-image: url('./assets/img/FlowerDesk.jpg');
+		background-size: cover;
+		background-position-x: 30%;
+		background-repeat: no-repeat;
 		height: 100vh;
 		overflow: scroll;
 	}

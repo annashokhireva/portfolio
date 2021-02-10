@@ -21,11 +21,11 @@
 
 <style scoped lang="scss">
 
-	// section {
-		// background-image: url('../assets/img/FlowerDesk.jpg');
-		// background-size: cover;
-		// background-position-x: left;
-		// background-repeat: no-repeat;
-	// }
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
+	}
 
 </style>
