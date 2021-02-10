@@ -34,6 +34,12 @@
 
 <style lang="scss" scoped>
 
+	section {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
 	// section {
 	// 	background-image: url('../assets/img/iPad.jpg');
 	// 	background-size: cover;
@@ -78,7 +84,7 @@
 
 	.circle-container {
 		@include on-circle($item-count: 6, $circle-size: 20em, $item-size: 7em); 
-		margin: 5em auto 0;
+		margin: 5em;
 		// border: solid 5px rgb(235, 235, 235);
 		
 		.img { 
@@ -96,7 +102,7 @@
 			&:active {
 				width: 100%; 
 				height: 100%;
-    	}
+	}
   }
 }
 

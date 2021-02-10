@@ -33,24 +33,25 @@
 		// background-size: cover;
 		// background-position-x: left;
 		// background-repeat: no-repeat;
-		height: fit-content;
+		height: 100vh;
+		overflow: scroll;
 	}
 
 	// @media only screen and (max-width: 1290px) {
- 	// 	#app {
-    // 		background-image: url('./assets/img/Mac.png');
-	// 		background-size: cover;
-	// 		background-position-x: center;
-	// 		background-repeat: no-repeat;
-  	// 	}
+	// 	#app {
+	//		background-image: url('./assets/img/Mac.png');
+	//		background-size: cover;
+	//		background-position-x: center;
+	//		background-repeat: no-repeat;
+	// 	}
 	// }
 
 	// @media only screen and (max-width: 900px) {
- 	// 	#app {
-    // 		background-image: url('./assets/img/iPhone.png');
-	// 		background-size: cover;
-	// 		background-position-x: 70%;			
-	// 		background-repeat: no-repeat;
-  	// 	}
+	// 	#app {
+	//		background-image: url('./assets/img/iPhone.png');
+	//		background-size: cover;
+	//		background-position-x: 70%;			
+	//		background-repeat: no-repeat;
+	// 	}
 	// }
 </style>

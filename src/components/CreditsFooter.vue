@@ -1,7 +1,7 @@
 <template>
 	<footer>
 		<div class="logo">AS</div>
-		<a href="https://www.vecteezy.com/free-photos/flowers">Flowers Stock photos by Vecteezy</a>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique aspernatur odio debitis quisquam, voluptas porro explicabo impedit laborum quo ullam aperiam. Labore eligendi neque quaerat mollitia ex saepe eveniet veniam?</p>
 	</footer>
 	
 </template>
@@ -14,7 +14,6 @@ export default {
 
 <style scoped lang="scss">
 	footer {
-		height: 20vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
