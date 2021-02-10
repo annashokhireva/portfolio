@@ -1,16 +1,16 @@
 <template>
 	<section class="main-section">
 		<h1>{{ msg }}</h1>
-		<tic-tac-toe />
+		<!-- <tic-tac-toe /> -->
 	</section>
 </template>
 
 <script>
-	import TicTacToe from './TicTacToe.vue';
+	// import TicTacToe from './TicTacToe.vue';
 
 	export default {
 	components: { 
-		TicTacToe 
+		// TicTacToe 
 	},
 
 		props: {
