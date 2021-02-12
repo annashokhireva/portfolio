@@ -36,7 +36,7 @@
 
 	section {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -55,8 +55,26 @@
 		height: $circle-size;
 		padding: 0;
 		border-radius: 50%; 
-		list-style: none;       
+		list-style: none;  
+
+		animation-name: spin;
+		animation-duration: 10000ms;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;     
+
+			@keyframes spin {
+				from {
+					transform:rotate(0deg);
+				}
+				to {
+					transform:rotate(360deg);
+				}
+			} 
 	
+			&:hover {
+				animation-play-state: paused;
+			}	
+
 			> * {
 				display: block;
 				position: absolute;
@@ -64,8 +82,7 @@
 				left: 50%;
 				width:  $item-size;
 				height: $item-size;
-				margin: -($item-size / 2);
-			
+				margin: -($item-size / 2); 			
 				$angle: (360 / $item-count);
 				$rot: 0;
 
@@ -97,6 +114,7 @@
 			
 			transition: .15s;
 			box-sizing: content-box;
+
 			
 			&:hover,
 			&:active {
