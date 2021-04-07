@@ -1,19 +1,19 @@
 <template>
 	<main>
 		<about-me />
-		<my-skills/>
+		<my-projects/>
 
 	</main>
 </template>
 
 <script>
-	import MySkills from '../components/MySkills.vue';
+	import MyProjects from '../components/MyProjects.vue';
 	import AboutMe from '../components/AboutMe.vue';
 
 	export default {
 		name: "HomePage",
 		components: {
-			MySkills,
+			MyProjects,
 			AboutMe
 		}
 	};

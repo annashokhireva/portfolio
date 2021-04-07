@@ -2,20 +2,18 @@
 <section class="main-section">
 	<!-- <img class="my-picture" src="@/assets/img/MyPicture.jpg" width="300" alt="My Photo"> -->
 
-	<div class="intro">
-		<span class="inline">
-			<p>Hello, my name is</p>
-			<h1>Anna Shokhireva.</h1>
-		</span>
-		<p>I'm a front end developer in the making.</p>
-	</div>
+		<div class="intro">
+			<span class="inline">
+				<p>Hello, my name is</p>
+				<h1>Anna Shokhireva.</h1>
+			</span>
+			<p>I'm a front end developer in the making.</p>
+		</div>
 	
-	<!-- <tic-tac-toe /> -->
 </section>
 </template>
 
 <script>
-// import TicTacToe from './TicTacToe.vue';
 
 export default {
 	components: { 
@@ -38,9 +36,10 @@ export default {
 	}
 }
 
-.my-picture {
-	transform: rotate(3deg);
-	box-shadow: 1px 1px 2px #686767;
-}
+// .my-picture {
+// 	transform: rotate(3deg);
+// 	box-shadow: 1px 1px 2px #686767;
+// }
+
 
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<router-link to="/">About Me</router-link> |
-		<router-link to="/my_projects">My Projects</router-link>
+		<router-link to="/my_cv">Resume</router-link>
 	</header>
 </template>
 
