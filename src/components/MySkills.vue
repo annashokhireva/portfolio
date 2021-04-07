@@ -1,13 +1,24 @@
 <template>
     <section class="main-section">
-		<ul class="circle-container">
-			<li><vue-icon-color class="img"/></li>
-			<li><j-s-icon-color class="img" /></li>
-			<li><sass-icon-color class="img" /></li>
-			<li><responsive-design-color class="img" /></li>
-			<li><css-icon class="img" /></li>
-			<li><html-icon class="img" /></li>
-		</ul>
+		<div class="front-end">
+			<div class>
+				<h3>Front End</h3>
+			</div>
+			<ul class="circle-container">
+				<li><vue-icon-color class="img"/></li>
+				<li><j-s-icon-color class="img" /></li>
+				<li><sass-icon-color class="img" /></li>
+				<li><responsive-design-color class="img" /></li>
+				<li><css-icon class="img" /></li>
+				<li><html-icon class="img" /></li>
+			</ul>
+		</div>
+
+		<div class="back-end">
+
+		</div>
+		
+		
 		
 	</section>
 </template>
@@ -21,7 +32,7 @@
 	import ResponsiveDesignColor from '../assets/icons/ResponsiveDesignColor.vue';
 
 	export default {
-		components: { 
+		components: {
 			JSIconColor,
 			SassIconColor,
 			CssIcon,
@@ -34,11 +45,7 @@
 
 <style lang="scss" scoped>
 
-	section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+	
 
 	// section {
 	// 	background-image: url('../assets/img/iPad.jpg');
@@ -57,23 +64,23 @@
 		border-radius: 50%; 
 		list-style: none;  
 
-		animation-name: spin;
-		animation-duration: 10000ms;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;     
+		// animation-name: spin;
+		// animation-duration: 10000ms;
+		// animation-iteration-count: infinite;
+		// animation-timing-function: linear;     
 
-			@keyframes spin {
-				from {
-					transform:rotate(0deg);
-				}
-				to {
-					transform:rotate(360deg);
-				}
-			} 
+			// @keyframes spin {
+			// 	from {
+			// 		transform:rotate(0deg);
+			// 	}
+			// 	to {
+			// 		transform:rotate(360deg);
+			// 	}
+			// } 
 	
-			&:hover {
-				animation-play-state: paused;
-			}	
+			// &:hover {
+			// 	animation-play-state: paused;
+			// }	
 
 			> * {
 				display: block;

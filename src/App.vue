@@ -2,24 +2,23 @@
 	<div id="app">
 		<main-header />
 		<router-view />
-		<credits-footer />
+		<!-- <credits-footer /> -->
 	</div>
 </template>
 
 <script>
 	import MainHeader from './components/MainHeader';
-	import CreditsFooter from './components/CreditsFooter.vue';
+	// import CreditsFooter from './components/CreditsFooter.vue';
 
 
 	export default {
 		components: {
 			MainHeader,
-			CreditsFooter
+			// CreditsFooter,
 		}
 
 	}
 </script>
-
 <style lang="scss">
 	@import './sass';
 

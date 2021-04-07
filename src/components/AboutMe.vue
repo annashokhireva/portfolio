@@ -1,44 +1,46 @@
 <template>
-	<section class="main-section">
-		<img class="my-picture" src="@/assets/img/MyPicture.jpg" width="300" alt="My Photo">
+<section class="main-section">
+	<!-- <img class="my-picture" src="@/assets/img/MyPicture.jpg" width="300" alt="My Photo"> -->
 
-		<div class="intro">
+	<div class="intro">
+		<span class="inline">
 			<p>Hello, my name is</p>
-			<h1>Anna SHokhireva</h1>
-		</div>
-		
-		<!-- <tic-tac-toe /> -->
-	</section>
+			<h1>Anna Shokhireva.</h1>
+		</span>
+		<p>I'm a front end developer in the making.</p>
+	</div>
+	
+	<!-- <tic-tac-toe /> -->
+</section>
 </template>
 
 <script>
-	// import TicTacToe from './TicTacToe.vue';
+// import TicTacToe from './TicTacToe.vue';
 
-	export default {
+export default {
 	components: { 
 		// TicTacToe 
 	},
 
-	};
+};
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 
-	section {
-		display: flex;
-		justify-content: space-between;
-		align-items: left;
+.inline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.5em;
 
-		.intro {
-			text-align: left;
-			width: 60%;
-			height: fit-content;
-		}
+	h1 {
+		margin-left: 14px;
 	}
+}
 
-	.my-picture {
-		transform: rotate(3deg);
-		box-shadow: 1px 1px 2px #686767;
-	}
+.my-picture {
+	transform: rotate(3deg);
+	box-shadow: 1px 1px 2px #686767;
+}
 
 </style>

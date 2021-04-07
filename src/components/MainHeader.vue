@@ -18,7 +18,7 @@ export default {
 		width: 100vw;
 		background-color: honeydew;
 		opacity: 90%;
-		z-index: 1;
+		z-index: 2;
 
 		a {
 			font-weight: bold;
