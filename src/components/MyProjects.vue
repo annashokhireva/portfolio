@@ -29,7 +29,7 @@
 			<h5>Group project for JavaScript with framework and Agile software development courses. </h5>
 			<span>
 				<html-icon class="icon" />
-				<css-icon class="icon" />
+				<sass-icon-color class="icon" />
 				<j-s-icon-color class="icon" />
 				<vue-icon-color class="icon" />
 			</span>
@@ -66,7 +66,7 @@
 			<h5>Individual project for JavaScript with framework course. </h5>
 			<span>
 				<html-icon class="icon" />
-				<css-icon class="icon" />
+				<sass-icon-color class="icon" />
 				<j-s-icon-color class="icon" />
 				<vue-icon-color class="icon" />
 			</span>
@@ -94,7 +94,7 @@
 			<h5>Individual exercise for JavaScript with framework course. </h5>
 			<span>
 				<html-icon class="icon" />
-				<css-icon class="icon" />
+				<sass-icon-color class="icon" />
 				<j-s-icon-color class="icon" />
 				<vue-icon-color class="icon" />
 			</span>
@@ -217,6 +217,42 @@
 
 	<article>
 		<div class="image">
+			<a href="https://annashokhireva.github.io/tick-tack-toe/" target="_blank">
+				<img src="../assets/img/xo-game.png" alt="Tick-Tack-Toe Game">	
+			</a>
+		</div>
+		<div class="info">
+			<h2>Tick-Tack-Toe game</h2>
+			<h5>Personal project made with vanilla JavaScript</h5>
+			<span>
+				<html-icon class="icon" />
+				<sass-icon-color class="icon" />
+				<j-s-icon-color class="icon" />
+			</span>
+			
+			<ul>
+				<li>
+					Data is extracted from PUNK API.
+				</li>
+				<li>
+					Getting a random beer by clicking on dices.
+				</li>
+				<li>
+					Search function with filter function.
+				</li>
+				<li>
+					List paginaton.
+				</li>
+				<li>
+					Beer data is stored in Sessiom storage.
+				</li>
+			</ul>	 
+			
+		</div>
+	</article>
+
+	<article>
+		<div class="image">
 			<a href="https://annashokhireva.github.io/insurance-project/" target="_blank">
 				<img src="../assets/img/insurance-project.png" alt="Insurance Project website">	
 			</a>
@@ -255,7 +291,7 @@
 
 <script>
 	// import JSIconColor from '../assets/icons/JSIconColor.vue';
-	// import SassIconColor from '../assets/icons/SassIconColor.vue';
+	import SassIconColor from '../assets/icons/SassIconColor.vue';
 	import CssIcon from '../assets/icons/CssIcon.vue';
 	import FigmaIcon from '../assets/icons/FigmaIcon.vue';
 	import HtmlIcon from '../assets/icons/HtmlIcon.vue';
@@ -269,7 +305,7 @@
 	export default {
 		components: {
 			// JSIconColor,
-			// SassIconColor,
+			SassIconColor,
 			CssIcon,
 			HtmlIcon,
 			// VueIconColor,
@@ -315,34 +351,32 @@
 		margin: 30px;
 		width: 100%;
 
-		.image {
-			width: 500px;
-
-			img {
-				width: 100%;
-				height: auto;
-			}
-		}
-
-		.info {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: flex-start;
-			margin: 3em;
-
-			ul {
-				text-align: left;
-			}
-		}
-
 		h2, h5 {
 			text-align: center;
 		}
 
 	}
 
-	
+	.image {
+		width: 500px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		margin: 3em;
+
+		ul {
+			text-align: left;
+		}
+	}
 
 	.icon {
 		width: 50px;
@@ -351,6 +385,12 @@
 		cursor: pointer;
 	}
 
+
+	@media screen and (max-width: 600px) {
+		.image {
+			width: 200px;
+		}
+	}
 
 	// @mixin on-circle($item-count, $circle-size, $item-size) {
 	// 	position: relative;
