@@ -16,16 +16,17 @@ export default {
 		padding: 3vmin 2vmin;	
 		position: fixed;
 		width: 100vw;
-		background-color: honeydew;
-		opacity: 90%;
+		background: linear-gradient(rgba(255, 255, 255, 0.568)80%, rgba(255, 255, 255, 0));
+		opacity: 85%;
 		z-index: 2;
 
 		a {
 			font-weight: bold;
-			color: #2c3e50;
+			color: white;
+			text-decoration: none;
 
 			&.router-link-exact-active {
-			color: green;
+			color: rgb(255, 255, 255);
 			}
 		}
 	}

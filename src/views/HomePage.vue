@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<about-me />
+		<!-- <about-me /> -->
 		<my-projects/>
 
 	</main>
@@ -8,13 +8,13 @@
 
 <script>
 	import MyProjects from '../components/MyProjects.vue';
-	import AboutMe from '../components/AboutMe.vue';
+	// import AboutMe from '../components/AboutMe.vue';
 
 	export default {
 		name: "HomePage",
 		components: {
 			MyProjects,
-			AboutMe
+			// AboutMe
 		}
 	};
 </script>

@@ -14,7 +14,8 @@
 		<div class="back-end">
 
 		</div> -->
-	<h2>
+	<div class="line"></div>	
+	<h2 class="heading">
 		My projects
 	</h2>
 
@@ -334,13 +335,24 @@
 <style lang="scss" scoped>
 
 	.projects {
-		background-color: rgb(243, 243, 243);
+		// background-color: rgb(243, 243, 243);
 		padding: 40px 7vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		
+		background-color: rgb(240, 240, 240);
+		// background: radial-gradient(farthest-side at bottom left, rgb(255, 255, 255) 10%, rgb(114, 114, 114) 80%, transparent),
+		// 		radial-gradient(farthest-corner at top right, rgb(255, 255, 255) 0%, rgb(212, 214, 214) 80%, transparent 400px);
+		// background-size: 150% 150%;
+		animation: gradient 15s ease infinite;
+	}
+
+	.line {
+		margin: -7% 0 2%;
+		background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+		width: 100vw;
+		height: 60px;
 	}
 
 	article {
@@ -348,7 +360,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		margin: 30px;
+		margin: 40px;
 		width: 100%;
 
 		h2, h5 {
@@ -378,13 +390,27 @@
 		}
 	}
 
-	.icon {
-		width: 50px;
-		height: auto;
-		margin: 1.5em;
-		cursor: pointer;
+	@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
 	}
 
+	20% {
+		background-position: 100% 100%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	70% {
+		background-position: 50% 0%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 	@media screen and (max-width: 600px) {
 		.image {
