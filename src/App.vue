@@ -30,6 +30,7 @@
 		background: rgb(250, 249, 249);
 		height: 100vh;
 		overflow: scroll;
+		width: 100vw;
 	}
 	
 
