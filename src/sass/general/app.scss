@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Lato&display=swap');
 @import '../essentials/variables.scss';
 
 * {
@@ -10,10 +10,24 @@
     height: 100vh;
     width: 100vw;
     font-family: 'PT Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background: rgb(250, 249, 249);
+    overflow: scroll;
+    width: 100vw;
 }
 
 body {
     font-weight: 400;
+}
+
+.main-section {
+	height: 100%;
+	padding: 10vmin 4vmin 10vmin;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
@@ -23,6 +37,13 @@ h1 {
 
 h2 {
     font-size: 32px;
+    line-height: 2em;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
     line-height: 2em;
 }
 
@@ -44,6 +65,11 @@ p {
     cursor: pointer;
 }
 
+.heading {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 5%;
+}
 
 @media screen and (max-width: 600px) {
     h1 {

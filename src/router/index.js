@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomePAge from "../views/HomePage.vue";
+import HomePage from "../views/HomePage.vue";
 
 Vue.use(VueRouter);
 
@@ -8,13 +8,25 @@ const routes = [
 	{
 		path: "/",
 		name: "HomePage",
-		component: HomePAge
+		component: HomePage
 	},
 	{
-		path: "/my_cv",
-		name: "MyCV",
+		path: "/my-projects",
+		name: "myProjects",
 		component: () =>
-			import("../views/MyCV.vue")
+			import("../views/MyProjects.vue")
+	},
+	{
+		path: "/skills",
+		name: "MySkills",
+		component: () =>
+			import("../views/MySkills.vue")
+	},
+	{
+		path: "/contact",
+		name: "Contact",
+		component: () =>
+			import("../views/MyContact.vue")
 	}
 ];
 

@@ -1,33 +1,149 @@
 <template>
-	<main>
-		<!-- <about-me /> -->
-		<my-projects/>
+<section class="main-section">
 
-	</main>
+	<div class="intro" :class="{'intro-expanded' : expanded}">
+		<span class="inline">
+			<p>Hi, my name is</p>
+			<h1>Anna Shokhireva.</h1>
+		</span>
+		<p>I'm a <b>front end developer </b> in the making.</p>	
+	</div>
+
+	<div class="scroll">
+
+		<button @click="expand" :class="{'black-btn' : expanded}">
+			Get in touch
+		</button>
+
+		<div v-if="expanded" class="contacts">
+			<about-me />
+		</div>
+		
+	</div>
+	
+	
+</section>
 </template>
 
 <script>
-	import MyProjects from '../components/MyProjects.vue';
-	// import AboutMe from '../components/AboutMe.vue';
+	import AboutMe from '../components/AboutMe.vue';
 
 	export default {
-		name: "HomePage",
 		components: {
-			MyProjects,
-			// AboutMe
+		AboutMe
+		},
+
+		data() {
+			return {
+				expanded: false
+			}
+		},
+
+		methods: {
+			expand() {
+				this.expanded = !this.expanded;
+			}
 		}
+
 	};
 </script>
 
 <style lang="scss" scoped>
 
-	main {
+	section {
+		overflow: scroll;
+		// background: rgb(0, 21, 80);
+		color: transparent;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		// background-image: url('../assets/img/FlowerDesk.jpg');
-		// background-size: cover;
-		// background-repeat: no-repeat;
+		justify-content: center;
+		background: radial-gradient(farthest-side at bottom left, rgb(211, 139, 31) 10%, rgb(255, 73, 97) 80%, transparent),
+					radial-gradient(farthest-corner at top right, rgb(106, 8, 136) 0%, rgb(60, 252, 236) 80%, transparent 400px),
+					radial-gradient(farthest-corner at center,  rgb(198, 211, 19) 30%, rgb(96, 241, 0) 50%, transparent 700px);
+		background-size: 150% 150%;
+		animation: gradient 15s ease infinite;
+	}
+
+	.intro-expanded {
+		margin-top: 40%;
+	}
+
+	h1, h3, p {
+		color: white;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.inline {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			margin-left: 14px;
+		}
+
+	}
+
+	.scroll {
+		margin: 15% 0 3%;
+
+		h3 {
+			margin-bottom: 5%;
+		}
+
+		.down {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.icon {
+			margin: -5%;
+		}
+	}
+
+	.contacts {
+		height: auto;
+	}
+
+	.black-btn {
+		border: 3px solid black;
+		color: black;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+
+		20% {
+			background-position: 100% 100%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		70% {
+			background-position: 50% 0%;
+		}
+
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.inline {
+			display: block;
+		}
+
+		.intro {
+			margin-top: 70%;
+		}
 	}
 
 </style>
