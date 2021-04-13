@@ -15,9 +15,11 @@
 			Get in touch
 		</button>
 
-		<div v-if="expanded" class="contacts">
-			<about-me />
-		</div>
+		<transition name="roll">
+			<div v-if="expanded" class="contacts">
+				<about-me />
+			</div>
+		</transition>
 		
 	</div>
 	
@@ -64,8 +66,12 @@
 		animation: gradient 15s ease infinite;
 	}
 
+	.intro {
+		margin-bottom: 50px;
+	}
+
 	.intro-expanded {
-		margin-top: 40%;
+		margin-top: 80px;
 	}
 
 	h1, h3, p {
@@ -88,7 +94,7 @@
 	}
 
 	.scroll {
-		margin: 15% 0 3%;
+		
 
 		h3 {
 			margin-bottom: 5%;
@@ -112,6 +118,7 @@
 	.black-btn {
 		border: 3px solid black;
 		color: black;
+		margin-top: 0;
 	}
 
 	@keyframes gradient {
@@ -136,13 +143,21 @@
 		}
 	}
 
+	.roll-enter-active, .roll-leave-active {
+		transition: all .3s ease-in;
+	}
+	.roll-enter, .roll-leave-to {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+
 	@media screen and (max-width: 600px) {
 		.inline {
 			display: block;
 		}
 
-		.intro {
-			margin-top: 70%;
+		.intro-expanded {
+			margin-top: 50%;
 		}
 	}
 

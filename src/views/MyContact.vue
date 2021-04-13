@@ -16,7 +16,8 @@
 <style lang="scss" scoped>
 
 	div {
-		padding-top: 10vmin;
+		height: 100vh;
+		padding-top: 3vmin;
 		background: radial-gradient(farthest-side at bottom left, rgb(255, 255, 255) 10%, rgb(230, 239, 241) 80%, transparent),
 					radial-gradient(farthest-corner at top right, rgb(221, 213, 213) 0%, rgb(255, 255, 255) 80%, transparent 400px);
 		background-size: 150% 150%;

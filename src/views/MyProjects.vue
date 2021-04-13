@@ -23,7 +23,7 @@
 			
 			<ul>
 				<li>
-					Data is extarcted from REST API. 
+					Data is extarcted from custom REST API. 
 				</li>
 				<li>
 					Group work based on Agile software development pronciples.
@@ -215,25 +215,7 @@
 				<html-icon class="icon" />
 				<sass-icon-color class="icon" />
 				<j-s-icon-color class="icon" />
-			</span>
-			
-			<ul>
-				<li>
-					Data is extracted from PUNK API.
-				</li>
-				<li>
-					Getting a random beer by clicking on dices.
-				</li>
-				<li>
-					Search function with filter function.
-				</li>
-				<li>
-					List paginaton.
-				</li>
-				<li>
-					Beer data is stored in Sessiom storage.
-				</li>
-			</ul>	 
+			</span>	 
 			
 		</div>
 	</article>
